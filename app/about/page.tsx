@@ -7,7 +7,7 @@ export default function () {
     return (
         <div>
             <section className="py-[4rem] ">
-                <div className="max-w-[1240px] bg-black text-white py-[5rem] rounded-3xl mx-auto flex flex-col items-center gap-5 ">
+                <div className="max-w-[1240px] bg-black text-white py-[4rem] rounded-3xl mx-auto flex flex-col items-center gap-5 ">
                     <h1 className="text-7xl font-bold text-center">About Us</h1>
                 </div>
             </section>
@@ -22,7 +22,7 @@ export default function () {
             <section className="py-[8rem] ">
                 <div className="max-w-[1240px] mx-auto flex gap-5 ">
                     <div className="w-1/2 flex justify-center">
-                        <div className="h-[400px] w-[400px] rounded-2xl overflow-hidden border-2 border-indigo-950 relative">
+                        <div className="h-[400px] w-[400px] rounded-2xl overflow-hidden border-4 border-black relative">
                             <Image
                                 src="/poundcake.jpg"
                                 fill={true}
