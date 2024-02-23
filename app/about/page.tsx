@@ -7,8 +7,10 @@ export default function () {
     return (
         <div>
             <section className="py-[4rem] ">
-                <div className="max-w-[1240px] bg-black text-white py-[4rem] rounded-3xl mx-auto flex flex-col items-center gap-5 ">
-                    <h1 className="text-7xl font-bold text-center">About Us</h1>
+                <div className="max-w-[1240px] bg-gray-950 text-white py-[4rem] rounded mx-auto flex flex-col items-center gap-5 ">
+                    <h1 className="text-7xl font-bold text-orange-500 text-center">
+                        About Us
+                    </h1>
                 </div>
             </section>
             <section className="py-2">

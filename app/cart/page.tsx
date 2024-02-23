@@ -4,7 +4,7 @@ export const metadata = {
 };
 
 export default function () {
-    const nums = [1, 3];
+    const nums = [];
 
     return (
         <div>
@@ -18,13 +18,18 @@ export default function () {
                                 })
                             ) : (
                                 <div className="flex flex-col gap-5">
-                                    <p>No products ordered</p>
+                                    <p>No products selected</p>
                                     <a
                                         href="/products"
                                         className="py-3 px-6 bg-[#FFDDAB] border rounded-lg w-fit cursor-pointer hover:opacity-75 transition-all duration-200"
                                     >
                                         Browse Products
                                     </a>
+                                    <p className="text-xl font-bold max-w-[500px]">
+                                        You can submit an order without
+                                        selecting product. We will contact you
+                                        for details
+                                    </p>
                                 </div>
                             )}
                         </div>

@@ -19,7 +19,7 @@ export default function () {
                         <div className="flex gap-8 items-center">
                             <a
                                 href="/cart"
-                                className="bg-black py-3 px-8 rounded-lg text-white cursor-pointer hover:opacity-75 transition-all duration-200 text-lg uppercase"
+                                className="bg-orange-500 py-3 px-8 rounded-lg text-white cursor-pointer hover:opacity-75 transition-all duration-200 text-lg uppercase"
                             >
                                 Order Now
                             </a>
@@ -32,7 +32,7 @@ export default function () {
                         </div>
                     </div>
                     <div className="w-1/2 flex justify-center">
-                        <div className="relative w-[400px] h-[400px] border-4 border-black rounded-bl-[9rem]  overflow-hidden">
+                        <div className="relative w-[400px] h-[400px] border-4 border-orange-500 rounded-bl-[9rem]  overflow-hidden">
                             <Image
                                 src="/poundcake.jpg"
                                 fill={true}
@@ -82,11 +82,11 @@ export default function () {
                             trust us.
                         </p>
                         <div className="flex gap-8 items-center">
-                            <div className="text-center bg-black py-3 px-8 rounded-lg text-white hover:opacity-75 transition-all duration-200 text-lg uppercase">
+                            <div className="text-center bg-black py-3 px-8 rounded-lg text-orange-500 hover:opacity-75 transition-all duration-200 text-lg uppercase">
                                 <h5 className="text-4xl">+243</h5>
                                 <p>Happy customers</p>
                             </div>
-                            <div className="text-center bg-black py-3 px-8 rounded-lg text-white hover:opacity-75 transition-all duration-200 text-lg uppercase">
+                            <div className="text-center bg-black py-3 px-8 rounded-lg text-orange-500 hover:opacity-75 transition-all duration-200 text-lg uppercase">
                                 <h5 className="text-4xl">+1322</h5>
                                 <p>Products sold</p>
                             </div>

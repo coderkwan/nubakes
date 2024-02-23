@@ -23,7 +23,7 @@ export default function () {
                     </a>
                     <a
                         href="/cart"
-                        className="bg-black rounded-lg px-8 py-2 text-white"
+                        className="bg-orange-500 rounded-lg px-8 py-2 mt-3 text-white"
                     >
                         Basket
                     </a>
@@ -55,7 +55,7 @@ export default function () {
                     </div>
                 </div>
             </div>
-            <p className="py-4 text-center italic uppercase text-xs font-bold border-t border-indigo-950">
+            <p className="py-4 text-center italic uppercase text-xs font-bold border-t border-orange-500">
                 Built with care by{" "}
                 <a
                     href="https://lamperosmedia.com"

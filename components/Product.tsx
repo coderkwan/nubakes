@@ -3,7 +3,7 @@ import pund from "../public/poundcake.jpg";
 
 export default function () {
     return (
-        <div className="p-3 border rounded-xl flex flex-col gap-2 w-full max-w-[300px]">
+        <div className="p-3 border-2 border-orange-500 rounded-xl flex flex-col gap-2 w-full max-w-[300px]">
             <div className="border-2 rounded-md h-[200px] relative">
                 <Image src={pund} fill={true} objectFit="cover" alt="image" />
             </div>
