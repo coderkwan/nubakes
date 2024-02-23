@@ -1,10 +1,11 @@
 import Product from "../../components/Product";
+import { sql } from "@vercel/postgres";
 export const metadata = {
     title: "Products",
 };
 
-export default function () {
-    const nums = [1, 2, 3, 4, 5, 6, 5, 4, 3];
+export default async function () {
+    const { rows } = await sql`SELECT * FROM products`;
     return (
         <div>
             <section className="py-[8rem]">
@@ -59,8 +60,8 @@ export default function () {
 
                     <div className="flex justify-between gap-6 mb-[3rem]">
                         <div className="my-3 flex-wrap flex gap-[5rem] justify-center w-full">
-                            {nums.map((item, index) => {
-                                return <Product key={index} />;
+                            {rows.map((item, index) => {
+                                return <Product key={index} data={item} />;
                             })}
                         </div>
                     </div>

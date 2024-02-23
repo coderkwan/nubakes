@@ -1,15 +1,47 @@
 import Image from "next/image";
 import Product from "../components/Product";
 import Testimony from "../components/Testimony";
+import { sql } from "@vercel/postgres";
+import { url } from "inspector";
 
-export default function () {
-    const nums = [1, 2, 3];
+export default async function () {
+    const testimonials = [
+        {
+            fullName: "Kwenziwe Masilela",
+            location: "Sihlangwini, Sithobela",
+            testimony:
+                "Absolutely divine! Your chocolate cake is a slice of heaven. The moist texture and rich flavor left me craving for more. Kudos to your talented bakers!",
+        },
+        {
+            fullName: "Nokwanda Phiri",
+            location: "Manzini, Fairview",
+            testimony:
+                "I ordered a batch of vanilla cupcakes for a special occasion, and they were a hit! Light, fluffy, and the frosting was the perfect balance of sweetness. I'll be a repeat customer for sure.",
+        },
+        {
+            fullName: "Renelwe Mjekula",
+            location: "Mpolonjeni, Mbabane",
+            testimony:
+                "The cheesecake was a showstopper at our family gathering. Creamy and luscious, it disappeared in no time. Everyone wanted seconds! Your baking skills are truly impressive.",
+        },
+        {
+            fullName: "Hlanganani Dlamini",
+            location: "Kakhoza, Manzini",
+            testimony:
+                "The cinnamon rolls were a breakfast delight! Warm, gooey, and packed with cinnamon goodness. It felt like a homemade treat from grandma's kitchen. I'll be back for more treats soon!",
+        },
+    ];
+
+    const { rows } = await sql`SELECT * FROM products LIMIT 3`;
     return (
         <main>
-            <section className="py-[12rem] bg-gray-300">
-                <div className="max-w-[1240px] mx-auto flex gap-8 ">
+            <section
+                className="py-[12rem] bg-gray-300 bg-cover bg-no-repeat bg-center "
+                style={{ backgroundImage: "url('/crums.png')" }}
+            >
+                <div className="max-w-[1240px] mx-auto flex gap-8 items-center">
                     <div className="w-1/2">
-                        <h1 className="text-6xl font-extrabold leading-[4rem] ">
+                        <h1 className="text-[4rem] font-extrabold leading-[4rem] ">
                             Taste that you will never forget!
                         </h1>
                         <p className="text-2xl mt-4 mb-8">
@@ -32,7 +64,7 @@ export default function () {
                         </div>
                     </div>
                     <div className="w-1/2 flex justify-center">
-                        <div className="relative w-[400px] h-[400px] border-4 border-orange-500 rounded-bl-[9rem]  overflow-hidden">
+                        <div className="relative w-[500px] h-[500px] border-4 border-orange-500 rounded rounded-bl-[9rem]  overflow-hidden">
                             <Image
                                 src="/poundcake.jpg"
                                 fill={true}
@@ -53,10 +85,16 @@ export default function () {
                         love.
                     </p>
                     <div className="my-3 flex gap-[5rem] justify-center w-full">
-                        {nums.map((item, index) => {
-                            return <Product key={index} />;
+                        {rows.map((item, index) => {
+                            return <Product key={index} data={item} />;
                         })}
                     </div>
+                    <a
+                        href="/products"
+                        className="py-3 bg-orange-500 rounded-lg px-[2rem] font-bold mt-[2rem] uppercase hover:opacity-75 transition-all duration-200"
+                    >
+                        View All Products
+                    </a>
                 </div>
             </section>
             <section className="py-[10rem] bg-gray-300">
@@ -103,8 +141,8 @@ export default function () {
                         Here it directly from the fans of our flavor.
                     </p>
                     <div className="my-3 flex gap-[2rem] justify-center w-full flex-wrap">
-                        {nums.map((item, index) => {
-                            return <Testimony key={index} />;
+                        {testimonials.map((item, index) => {
+                            return <Testimony key={index} data={item} />;
                         })}
                     </div>
                 </div>

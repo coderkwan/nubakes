@@ -34,7 +34,7 @@ export default function () {
                         </div>
                     </div>
                     <div className="w-1/2">
-                        <p className="mb-4 text-lg">
+                        <p className="mb-4 text-lg max-w-[550px]">
                             At Nubakes, we believe that great food begins with
                             the finest ingredients. Our talented team of bakers
                             carefully selects premium, locally sourced
@@ -44,7 +44,7 @@ export default function () {
                             our chocolate cakes, we take pride in the quality
                             and authenticity of our baked goods
                         </p>
-                        <p className="mb-4 text-lg">
+                        <p className="mb-4 text-lg max-w-[550px]">
                             Our menu is a carefully curated collection of
                             classic favorites and innovative creations. Whether
                             you're craving a buttery, melt-in-your-mouth pastry
