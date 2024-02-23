@@ -23,8 +23,12 @@ export default function () {
                     </a>
                 </div>
                 <div className="flex flex-col gap-1 text-end">
-                    <p className="text-lg">+268 7670 5039</p>
-                    <p className="text-lg">nubakes@gmail.com</p>
+                    <a href="tel:26876705039" className="text-lg">
+                        +268 7670 5039
+                    </a>
+                    <a href="mailto:nubakes@gmail.com" className="text-lg">
+                        nubakes@gmail.com
+                    </a>
                     <div className="flex gap-3 justify-end">
                         <a href="https://instagram.com/lamperosmedia">
                             <Image
