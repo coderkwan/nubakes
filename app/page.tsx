@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Product from "../components/Product";
+import Testimony from "../components/Testimony";
 
 export default function () {
     const nums = [1, 2, 3];
@@ -84,6 +85,21 @@ export default function () {
                                 <p>Products sold</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+            <section className="py-[8rem] ">
+                <div className="max-w-[1240px] mx-auto flex flex-col items-center gap-5 ">
+                    <h2 className="text-7xl font-bold text-center">
+                        What our Customers say?
+                    </h2>
+                    <p className="text-xl text-center">
+                        Here it directly from the fans of our flavor.
+                    </p>
+                    <div className="my-3 flex gap-[2rem] justify-center w-full flex-wrap">
+                        {nums.map((item, index) => {
+                            return <Testimony key={index} />;
+                        })}
                     </div>
                 </div>
             </section>
