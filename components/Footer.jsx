@@ -12,7 +12,7 @@ export default function () {
                     <p>you will never forget</p>
                 </div>
                 <div className="flex flex-col gap-2">
-                    <a href="/product" className="text-lg">
+                    <a href="/products" className="text-lg">
                         Products
                     </a>
                     <a href="/about" className="text-lg">
@@ -20,6 +20,12 @@ export default function () {
                     </a>
                     <a href="/contact" className="text-lg">
                         Contact
+                    </a>
+                    <a
+                        href="/cart"
+                        className="bg-black rounded-lg px-8 py-2 text-white"
+                    >
+                        Basket
                     </a>
                 </div>
                 <div className="flex flex-col gap-1 text-end">

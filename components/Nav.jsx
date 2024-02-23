@@ -6,7 +6,7 @@ export default function () {
                     nubakes
                 </a>
                 <div className="flex items-center gap-8">
-                    <a href="/product" className="text-md">
+                    <a href="/products" className="text-md">
                         Products
                     </a>
                     <a href="/about" className="text-md">
@@ -16,9 +16,12 @@ export default function () {
                         Contact
                     </a>
                 </div>
-                <button className="bg-black rounded-lg px-8 py-2 text-white">
+                <a
+                    href="/cart"
+                    className="bg-black rounded-lg px-8 py-2 text-white"
+                >
                     Basket
-                </button>
+                </a>
             </div>
         </div>
     );

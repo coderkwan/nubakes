@@ -17,12 +17,18 @@ export default function () {
                             you even thought!
                         </p>
                         <div className="flex gap-8 items-center">
-                            <button className="bg-black py-3 px-8 rounded-lg text-white cursor-pointer hover:opacity-75 transition-all duration-200 text-lg uppercase">
+                            <a
+                                href="/cart"
+                                className="bg-black py-3 px-8 rounded-lg text-white cursor-pointer hover:opacity-75 transition-all duration-200 text-lg uppercase"
+                            >
                                 Order Now
-                            </button>
-                            <button className="border border-indigo-950 py-3 px-8 rounded-lg cursor-pointer hover:opacity-75 transition-all duration-200 text-lg uppercase ">
+                            </a>
+                            <a
+                                href="/contact"
+                                className="border border-indigo-950 py-3 px-8 rounded-lg cursor-pointer hover:opacity-75 transition-all duration-200 text-lg uppercase "
+                            >
                                 Contact Us
-                            </button>
+                            </a>
                         </div>
                     </div>
                     <div className="w-1/2 flex justify-center">
