@@ -12,15 +12,15 @@ export default function () {
 
     return (
         <div>
-            <section className="py-[8rem] ">
-                <div className="max-w-[1240px] mx-auto flex gap-5 ">
-                    <div className="w-1/2 flex flex-col gap-4">
+            <section className="py-[8rem] px-7">
+                <div className="max-w-[1240px] mx-auto flex flex-col items-center lg:items-start lg:flex-row gap-5 ">
+                    <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start gap-4">
                         <h1 className="text-5xl font-extrabold leading-[4rem] ">
                             Contact Us
                         </h1>
                         <form
                             action=""
-                            className="flex flex-col gap-2 max-w-[500px]"
+                            className="flex flex-col gap-2 w-full max-w-[500px]"
                         >
                             <div className="flex flex-col gap-2">
                                 <label htmlFor="">Name</label>
@@ -62,9 +62,9 @@ export default function () {
                             </button>
                         </form>
                     </div>
-                    <div className="w-1/2">
-                        <div className="flex justify-end gap-9">
-                            <div className="flex flex-col text-end">
+                    <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
+                        <div className="flex lg:justify-end gap-9">
+                            <div className="flex flex-col lg:text-end">
                                 <a href="tel:26876705039" className="text-lg">
                                     +268 7670 5039
                                 </a>
@@ -75,7 +75,7 @@ export default function () {
                                     nubakes@gmail.com
                                 </a>
                             </div>
-                            <div className="flex flex-col text-end">
+                            <div className="flex flex-col lg:text-end">
                                 <p className="text-lg">Farview North</p>
                                 <p className="text-lg">Manzini, eSwatini</p>
                             </div>
