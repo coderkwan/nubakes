@@ -4,7 +4,7 @@ export const metadata = {
 };
 
 export default function () {
-    const nums = [2, 3];
+    const nums = [];
 
     return (
         <div>
