@@ -8,17 +8,17 @@ export default async function () {
     const { rows } = await sql`SELECT * FROM products`;
     return (
         <div>
-            <section className="py-[8rem]">
+            <section className="py-[8rem] px-7">
                 <div className="max-w-[1240px] mx-auto gap-5">
-                    <div className="flex justify-between gap-6 mb-[3rem] bg-gray-200 rounded-lg p-8">
-                        <form action="" className="w-1/3">
+                    <div className="flex flex-wrap md:flex-nowrap justify-between gap-6 mb-[3rem] bg-gray-200 rounded-lg p-8">
+                        <form action="" className="w-full md:w-1/3">
                             <div className="flex flex-col gap-3">
                                 <label htmlFor="" className="text-lg">
                                     Sort By
                                 </label>
                                 <select
                                     name="sort"
-                                    className="p-3 rounded-md max-w-[300px]"
+                                    className="p-3 rounded-md w-full md:max-w-[300px]"
                                 >
                                     <option value="popularity">
                                         Popularity
@@ -27,14 +27,14 @@ export default async function () {
                                 </select>
                             </div>
                         </form>
-                        <form action="" className="w-1/3">
+                        <form action="" className="w-full md:w-1/3">
                             <div className="flex flex-col gap-3">
                                 <label htmlFor="" className="text-lg">
                                     Order
                                 </label>
                                 <select
                                     name="sort"
-                                    className="p-3 rounded-md max-w-[300px]"
+                                    className="p-3 rounded-md w-full md:max-w-[300px]"
                                 >
                                     <option value="ascending">Ascending</option>
                                     <option value="descending">
@@ -43,7 +43,7 @@ export default async function () {
                                 </select>
                             </div>
                         </form>
-                        <form action="" className="w-1/3">
+                        <form action="" className="w-full md:w-1/3">
                             <div className="flex flex-col gap-3">
                                 <label htmlFor="" className="text-lg">
                                     Proce Range
@@ -52,7 +52,7 @@ export default async function () {
                                     type="range"
                                     min={0}
                                     max={1000}
-                                    className="p-3 rounded-md max-w-[300px]"
+                                    className="p-3 rounded-md w-full md:max-w-[300px]"
                                 />
                             </div>
                         </form>
