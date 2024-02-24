@@ -4,13 +4,13 @@ export const metadata = {
 };
 
 export default function () {
-    const nums = [];
+    const nums = [2, 3];
 
     return (
         <div>
-            <section className="py-[8rem] ">
-                <div className="max-w-[1240px] mx-auto flex gap-5 ">
-                    <div className="w-1/2">
+            <section className="py-[8rem] px-7">
+                <div className="max-w-[1240px] mx-auto flex flex-col md:flex-row gap-5 ">
+                    <div className="w-full md:w-1/2">
                         <div className="flex flex-col gap-4">
                             {nums.length > 0 ? (
                                 nums.map((item, index) => {
@@ -34,14 +34,14 @@ export default function () {
                             )}
                         </div>
                     </div>
-                    <div className="w-1/2 flex flex-col gap-4">
+                    <div className="w-full md:w-1/2 flex flex-col gap-4">
                         <div className="text-lg  bg-[#FFDDAB] rounded-lg max-w-[500px] p-3">
                             We will contact you about your order, delivery and
                             payment.
                         </div>
                         <form
                             action=""
-                            className="flex flex-col gap-2 max-w-[500px]"
+                            className="flex flex-col gap-2 w-full md:max-w-[500px]"
                         >
                             <div className="flex flex-col gap-2">
                                 <label htmlFor="">Name</label>
