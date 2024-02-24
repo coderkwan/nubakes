@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function () {
     return (
         <div className="bg-gray-300">
-            <div className="py-[5rem] max-w-[1240px] mx-auto flex justify-between items-start">
+            <div className="py-[5rem] px-7 max-w-[1240px] mx-auto flex flex-col gap-9 md:flex-row justify-between text-center md:text-start items-center md:items-start">
                 <div>
                     <a href="/" className="text-5xl font-extrabold mb-3">
                         nubakes
@@ -43,7 +43,7 @@ export default function () {
                         />
                     </a>
                 </div>
-                <div className="flex flex-col gap-1 text-end">
+                <div className="flex flex-col items-center md:items-center gap-1 text-end">
                     <a
                         href="tel:26876705039"
                         className="text-lg cursor-pointer hover:opacity-75 transition-all duration-200"

@@ -14,8 +14,8 @@ export default function () {
                 </div>
             </section>
             <section className="py-2">
-                <div className="max-w-[1240px] mx-auto flex flex-col items-center gap-5 ">
-                    <h2 className="text-4xl text-center max-w-[900px]">
+                <div className="max-w-[1240px] mx-auto ">
+                    <h2 className="text-4xl max-w-[900px]">
                         We have been baking and creating unforgettable flavor
                         since 2013. People love us. you should too.
                     </h2>
@@ -23,8 +23,8 @@ export default function () {
             </section>
             <section className="py-[8rem] ">
                 <div className="max-w-[1240px] mx-auto flex gap-5 ">
-                    <div className="w-1/2 flex justify-center">
-                        <div className="h-[400px] w-[400px] rounded-2xl overflow-hidden border-4 border-black relative">
+                    <div className="w-1/2 flex justify-start">
+                        <div className="h-[400px] w-[500px] rounded-2xl overflow-hidden border-4 border-black relative">
                             <Image
                                 src="/poundcake.jpg"
                                 fill={true}
@@ -58,8 +58,8 @@ export default function () {
                 </div>
             </section>
             <section className="pt-2 mb-[8rem]">
-                <div className="max-w-[1240px] mx-auto flex flex-col items-center gap-5 ">
-                    <h3 className="text-3xl text-center max-w-[900px]">
+                <div className="max-w-[1240px] mx-auto ">
+                    <h3 className="text-3xl max-w-[900px]">
                         Beyond the delectable treats that line our display
                         cases, [Bakery Name] is a place where community and
                         connection thrive. Our cozy and inviting space is the

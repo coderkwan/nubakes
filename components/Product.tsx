@@ -5,7 +5,7 @@ export default async function ({ data }) {
         "https://t6sxwjrobiyo5qjy.public.blob.vercel-storage.com/" + data.image;
 
     return (
-        <div className="p-3 border-2 border-orange-500 rounded-xl flex flex-col gap-2 w-full max-w-[300px]">
+        <div className="p-3 border-2 border-orange-500 rounded-xl flex flex-col gap-2 w-full md:max-w-[300px]">
             <div className="border-2 rounded-md h-[200px] relative">
                 <Image src={image} fill={true} objectFit="cover" alt="image" />
             </div>

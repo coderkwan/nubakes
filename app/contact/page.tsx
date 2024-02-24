@@ -64,7 +64,7 @@ export default function () {
                     </div>
                     <div className="w-1/2">
                         <div className="flex justify-end gap-9">
-                            <div className="flex flex-col">
+                            <div className="flex flex-col text-end">
                                 <a href="tel:26876705039" className="text-lg">
                                     +268 7670 5039
                                 </a>
@@ -75,7 +75,7 @@ export default function () {
                                     nubakes@gmail.com
                                 </a>
                             </div>
-                            <div className="flex flex-col">
+                            <div className="flex flex-col text-end">
                                 <p className="text-lg">Farview North</p>
                                 <p className="text-lg">Manzini, eSwatini</p>
                             </div>

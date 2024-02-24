@@ -21,11 +21,11 @@ export default function () {
                                     <p>No products selected</p>
                                     <a
                                         href="/products"
-                                        className="py-3 px-6 bg-[#FFDDAB] border rounded-lg w-fit cursor-pointer hover:opacity-75 transition-all duration-200"
+                                        className="py-3 px-6 bg-[#FFDDAB] rounded-lg w-fit uppercase font-bold text-gray-800 cursor-pointer hover:opacity-75 transition-all duration-200"
                                     >
                                         Browse Products
                                     </a>
-                                    <p className="text-xl font-bold max-w-[500px]">
+                                    <p className="text-xl max-w-[500px]">
                                         You can submit an order without
                                         selecting product. We will contact you
                                         for details
@@ -35,7 +35,7 @@ export default function () {
                         </div>
                     </div>
                     <div className="w-1/2 flex flex-col gap-4">
-                        <div className="text-lg  bg-[#FFDDAB] rounded-full text-center max-w-[500px] p-3">
+                        <div className="text-lg  bg-[#FFDDAB] rounded-lg max-w-[500px] p-3">
                             We will contact you about your order, delivery and
                             payment.
                         </div>

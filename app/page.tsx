@@ -2,7 +2,6 @@ import Image from "next/image";
 import Product from "../components/Product";
 import Testimony from "../components/Testimony";
 import { sql } from "@vercel/postgres";
-import { url } from "inspector";
 
 export default async function () {
     const testimonials = [
@@ -36,35 +35,35 @@ export default async function () {
     return (
         <main>
             <section
-                className="py-[12rem] bg-gray-300 bg-cover bg-no-repeat bg-center "
-                style={{ backgroundImage: "url('/crums.png')" }}
+                className="py-[12rem]  px-7 bg-white text-black  bg-cover bg-no-repeat bg-center"
+                // style={{ backgroundImage: "url('/crums.png')" }}
             >
-                <div className="max-w-[1240px] mx-auto flex gap-8 items-center">
-                    <div className="w-1/2">
-                        <h1 className="text-[4rem] font-extrabold leading-[4rem] ">
+                <div className="max-w-[1240px] mx-auto flex flex-col lg:flex-row gap-8 items-center">
+                    <div className="w-full flex flex-col items-center text-center lg:text-start lg:items-start lg:w-1/2">
+                        <h1 className="text-[2.8rem] sm:text-[4rem] font-extrabold leading-[3rem] sm:leading-[4rem] ">
                             Taste that you will never forget!
                         </h1>
-                        <p className="text-2xl mt-4 mb-8">
+                        <p className="text-3xl mt-4 mb-8">
                             We make sure that you get more flavor and taste than
                             you even thought!
                         </p>
-                        <div className="flex gap-8 items-center">
+                        <div className="w-full flex flex-col lg:flex-row gap-8 items-center">
                             <a
                                 href="/cart"
-                                className="bg-orange-500 py-3 px-8 rounded-lg text-white cursor-pointer hover:opacity-75 transition-all duration-200 text-lg uppercase"
+                                className="w-full lg:w-fit bg-orange-500 py-3 px-8 rounded-lg text-white cursor-pointer hover:opacity-75 transition-all duration-200 text-lg uppercase"
                             >
                                 Order Now
                             </a>
                             <a
                                 href="/contact"
-                                className="border border-indigo-950 py-3 px-8 rounded-lg cursor-pointer hover:opacity-75 transition-all duration-200 text-lg uppercase "
+                                className="w-full lg:w-fit border border-indigo-950 py-3 px-8 rounded-lg cursor-pointer hover:opacity-75 transition-all duration-200 text-lg uppercase "
                             >
                                 Contact Us
                             </a>
                         </div>
                     </div>
-                    <div className="w-1/2 flex justify-center">
-                        <div className="relative w-[500px] h-[500px] border-4 border-orange-500 rounded rounded-bl-[9rem]  overflow-hidden">
+                    <div className="w-full lg:w-1/2 flex justify-center">
+                        <div className="relative w-[500px] h-[500px] border-4 border-orange-500 rounded-[3rem] md:rounded-[9rem]  overflow-hidden">
                             <Image
                                 src="/poundcake.jpg"
                                 fill={true}
@@ -75,16 +74,16 @@ export default async function () {
                     </div>
                 </div>
             </section>
-            <section className="py-[10rem] ">
+            <section className="py-[10rem]  px-7">
                 <div className="max-w-[1240px] mx-auto flex flex-col items-center gap-5 ">
-                    <h2 className="text-7xl font-bold text-center">
+                    <h2 className="text-[2.8rem] sm:text-7xl font-bold text-center">
                         Featured Products
                     </h2>
                     <p className="text-xl text-center">
                         This are our most popular products which are customers
                         love.
                     </p>
-                    <div className="my-3 flex gap-[5rem] justify-center w-full">
+                    <div className="my-3 flex flex-col items-center md:flex-row flex-wrap gap-[5rem] justify-center w-full">
                         {rows.map((item, index) => {
                             return <Product key={index} data={item} />;
                         })}
@@ -97,9 +96,9 @@ export default async function () {
                     </a>
                 </div>
             </section>
-            <section className="py-[10rem] bg-gray-300">
-                <div className="max-w-[1240px] mx-auto flex gap-8 ">
-                    <div className="w-1/2 flex justify-center">
+            <section className="py-[10rem] px-7 bg-gray-300">
+                <div className="max-w-[1240px] mx-auto flex flex-col lg:flex-row gap-8 ">
+                    <div className="w-full lg:w-1/2 flex justify-center">
                         <div className="relative w-[400px] h-[400px] border-4 border-black rounded-tl-[9rem]  overflow-hidden">
                             <Image
                                 src="/spice.jpg"
@@ -109,8 +108,8 @@ export default async function () {
                             />
                         </div>
                     </div>
-                    <div className="w-1/2">
-                        <h2 className="text-6xl font-extrabold leading-[4rem] ">
+                    <div className="w-full lg:w-1/2 text-center lg:text-start">
+                        <h2 className="text-[2.8rem] sm:text-6xl font-extrabold leading-[4rem] ">
                             Why choose us?
                         </h2>
                         <p className="text-2xl mt-4 mb-8">
@@ -119,7 +118,7 @@ export default async function () {
                             parties, weddings, dinners and non-events. You can
                             trust us.
                         </p>
-                        <div className="flex gap-8 items-center">
+                        <div className="flex flex-wrap justify-center gap-8 items-center">
                             <div className="text-center bg-black py-3 px-8 rounded-lg text-orange-500 hover:opacity-75 transition-all duration-200 text-lg uppercase">
                                 <h5 className="text-4xl">+243</h5>
                                 <p>Happy customers</p>
@@ -132,9 +131,9 @@ export default async function () {
                     </div>
                 </div>
             </section>
-            <section className="py-[8rem] ">
+            <section className="py-[8rem] px-7">
                 <div className="max-w-[1240px] mx-auto flex flex-col items-center gap-5 ">
-                    <h2 className="text-7xl font-bold text-center">
+                    <h2 className="text-[2.8rem] sm:text-7xl font-bold text-center">
                         What our Customers say?
                     </h2>
                     <p className="text-xl text-center">
